@@ -1,6 +1,6 @@
 import typeScript from "rollup-plugin-typescript2";
 import { eslint } from "rollup-plugin-eslint";
-console.log("🚀 ~ file: rollup.config.js:3 ~ eslint:", eslint);
+import html from "@rollup/plugin-html";
 
 export default {
   input: "src/main.ts",
@@ -9,5 +9,12 @@ export default {
     format: "cjs",
     sourcemap: true, //生成bundle.map.js文件，方便调试
   },
-  plugins: [typeScript(), eslint()],
+  plugins: [
+    typeScript(),
+    eslint(),
+    html({
+      title: "乒乓",
+      scripts: `<div #id='rootDom'></div><script src="./index.js"></script>`,
+    }),
+  ],
 };

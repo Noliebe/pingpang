@@ -11,6 +11,6 @@ const pushNood = () => {
   });
 };
 
-export default function (): void {
-  console.log(fooText);
-}
+pushNood();
+console.log(noodeList);
+console.log(fooText, "fooText");
