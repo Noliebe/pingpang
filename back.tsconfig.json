@@ -1,0 +1,10 @@
+
+{
+    "noEmitHelpers": false,
+    "importHelpers": true,
+    "noResolve": false,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "inlineSourceMap": false,
+    "allowNonTsExtensions": true
+}
