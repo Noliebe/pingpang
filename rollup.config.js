@@ -10,8 +10,8 @@ export default {
     sourcemap: true, //生成bundle.map.js文件，方便调试
   },
   plugins: [
-    typeScript(),
     eslint(),
+    typeScript(),
     html({
       title: "乒乓",
       scripts: `<div #id='rootDom'></div><script src="./index.js"></script>`,
