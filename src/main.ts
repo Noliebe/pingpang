@@ -12,7 +12,8 @@ const pushNood = () => {
   });
 };
 
-new WebAudioManager();
+const audioManager = new WebAudioManager();
+audioManager.oscillator.start();
 
 pushNood();
 console.log(noodeList);
